@@ -24,10 +24,12 @@ import android.widget.Filter;
 public class PlacesAdapter extends ArrayAdapter<String> {
 
 	private String currentText;
+	private Context context;
 	
 	public PlacesAdapter(Context context, int textViewResourceId) {
 		super(context, textViewResourceId);
 		currentText = "";
+		this.context = context;
 	}
 
 	@Override
@@ -50,7 +52,7 @@ public class PlacesAdapter extends ArrayAdapter<String> {
 				 * type of purposes.
 				 */
 				HttpClient client = new DefaultHttpClient();
-				HttpGet httpGet = new HttpGet("http://pre.dev.goeuro.de:12345/api/v1/suggest/position/en/name/" + currentText);
+				HttpGet httpGet = new HttpGet(context.getString(R.string.api_endpoint) + currentText);
 				HttpResponse response = client.execute(httpGet);
 				String responseBody = EntityUtils.toString(response.getEntity());
 				int statusCode = response.getStatusLine().getStatusCode();

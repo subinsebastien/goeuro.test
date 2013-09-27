@@ -51,7 +51,7 @@ public class Home extends Activity implements TextWatcher, OnClickListener	{
 	@Override
 	public void onClick(View v) {
 		if(v.getId() == R.id.btn_search)	{
-			Toast.makeText(this, "Search is not yet implemented", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, getString(R.string.search_no_implemented), Toast.LENGTH_SHORT).show();
 		}
 	}
 }

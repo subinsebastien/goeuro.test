@@ -4,5 +4,9 @@
     <string name="app_name">goeuro.test</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="search">Search</string>
+    <string name="api_endpoint">http://pre.dev.goeuro.de:12345/api/v1/suggest/position/en/name/</string>
+    <string name="search_no_implemented">Search is not yet implemented</string>
 
 </resources>
