@@ -2,10 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="false"
     tools:context=".Home" >
 
     <TextView
@@ -25,7 +22,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="20dp"
+        
         android:completionThreshold="1"
         android:ems="10" >
 
@@ -39,7 +36,8 @@
         android:layout_alignLeft="@+id/actv_place_one"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/actv_place_one"
-        android:layout_marginTop="20dp"
+        
+
         android:completionThreshold="1"
         android:ems="10" />
 
@@ -49,7 +47,15 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/actv_place_two"
         android:layout_below="@+id/actv_place_two"
-        android:layout_marginTop="30dp"
+        
         android:text="Search" />
+
+    <com.xtel.goeuro.test.GameView
+        android:id="@+id/gameView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#232323" />
 
 </RelativeLayout>
